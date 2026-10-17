@@ -1,4 +1,4 @@
-# SLE-4: Final Viva & Architecture Decision Record (ADR)
+# SLE-4: Architecture Decision Record (ADR)
 
 **Course:** 02AML204 – Introduction to Artificial Intelligence  
 **Student:** Sanskruti Sandeep Danole  
@@ -15,15 +15,11 @@ SLE-4 records and defends one important architecture decision from the BFS/DFS p
 - **SLE-1:** Built the BFS/DFS search project and maintained the AI contribution documentation.
 - **SLE-2:** Empirically compared BFS and DFS on the same 20-node graph using repeated 10,000-run benchmarks.
 - **SLE-3:** Represented the same system using the full C4 model: Context, Container, Component and Code.
-- **SLE-4:** Records the architecture decision, its alternatives, justification and consequences, followed by viva preparation.
+- **SLE-4:** Records the architecture decision, alternatives, justification and consequences.
 
 ## ADR
 
 See [`ADR/ADR-001-search-engine-container.md`](ADR/ADR-001-search-engine-container.md).
-
-## Viva Preparation
-
-See [`viva/Viva-Questions-Answers.md`](viva/Viva-Questions-Answers.md).
 
 ## Submission Documents
 
@@ -42,4 +38,6 @@ The Search Engine is treated as the main container because it contains the core 
 
 ## AI Contribution
 
-ChatGPT was used to help organize the ADR, connect the previous SLE work, structure the documentation and prepare viva questions. The student provided and reviewed the BFS/DFS project and is responsible for understanding and defending the decision during viva.
+**AI tool used:** ChatGPT.
+
+AI assistance was used to organize and refine the ADR structure, connect the architecture decision with the previous SLE-1, SLE-2 and SLE-3 work, improve the clarity of the rationale and consequences, and review the documentation for consistency. The student provided the project context and previous work, reviewed the generated content, made the final decisions and is responsible for the submitted implementation and documentation.
