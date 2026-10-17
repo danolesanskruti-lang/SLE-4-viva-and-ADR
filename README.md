@@ -15,7 +15,7 @@ SLE-4 records and defends one important architecture decision from the BFS/DFS p
 - **SLE-1:** Built Agent / Search code + AI Contribution Log + README.
 - **SLE-2:** Profiled the code and wrote a comparison report with numbers using repeated 10,000-run benchmarks.
 - **SLE-3:** Drew C4 Architecture diagrams (Context, Container, Component and Code).
-- **SLE-4:** Records the architecture decision, alternatives, justification, consequences and AI Contribution Note.
+- **SLE-4:** Records the architecture decision, alternatives, justification, consequences and AI Contribution.
 
 ## ADR
 
@@ -35,7 +35,7 @@ See [`ADR/ADR-001-search-engine-container.md`](ADR/ADR-001-search-engine-contain
 
 The Search Engine is treated as the main container because it contains the core BFS/DFS traversal logic. The SLE-3 architecture separates Input/Control, Graph Data, Search Engine, Result/Trace and Python Runtime responsibilities. At Component level, traversal selection, frontier management, visited tracking, target checking and traversal output are separated so the design remains understandable and directly connected to the implementation.
 
-## AI Contribution Note
+## AI Contribution
 
 **AI tool used:** ChatGPT.
 
