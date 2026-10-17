@@ -1,4 +1,4 @@
-# SLE-4: Final Viva & Architecture Decision Record (ADR)
+# SLE-4: Architecture Decision Record (ADR)
 
 **Course:** 02AML204 – Introduction to Artificial Intelligence  
 **PRN:** 25UAM059  
@@ -66,30 +66,4 @@ SLE-1 established the BFS/DFS search project and AI contribution documentation. 
 
 **AI tool used:** ChatGPT.
 
-AI assistance was used for organizing the ADR, connecting the previous SLE work, structuring the viva notes and preparing documentation. The student selected and reviewed the BFS/DFS project, provided the previous SLE work and is responsible for understanding and defending the decision in the viva.
-
-## PART D: Viva Preparation Notes
-
-1. **Why did you choose a separate Search Engine container?**  
-   Because BFS and DFS contain the core traversal logic, so keeping that responsibility together makes the architecture clear and matches SLE-3.
-
-2. **Why are BFS and DFS kept in the same Search Engine?**  
-   Both solve the same graph-search problem. BFS uses a queue and DFS uses stack-based traversal, so they can share the same architectural boundary.
-
-3. **What alternatives did you consider?**  
-   One-module design, separate BFS/DFS top-level containers, and expanding every container at Component level.
-
-4. **How does SLE-2 support your decision?**  
-   It uses the same 20-node graph and 10,000 benchmark runs for BFS and DFS, making search logic the central measured responsibility.
-
-5. **How does SLE-3 support your decision?**  
-   It separates Input/Control, Graph Data, Search Engine, Result/Trace and Python Runtime, then expands the Search Engine into focused components.
-
-6. **What are the advantages?**  
-   Better readability, clearer responsibilities, easier BFS/DFS comparison and a direct connection between the architecture and the Python implementation.
-
-7. **What are the trade-offs?**  
-   The Search Engine can grow if many algorithms are added, so BFS-specific and DFS-specific frontier behaviour must remain separated.
-
-8. **What if the problem size becomes larger?**  
-   The same architectural separation can remain, but the Search Engine and performance aspects may need further optimization depending on the graph and search requirements.
+AI assistance was used for organizing and refining the ADR structure, connecting the previous SLE work, improving the clarity of the architecture rationale and consequences, and reviewing the documentation for consistency. The student provided the project context and previous work, reviewed the generated content, made the final architecture decisions and is responsible for the submitted implementation and documentation.
