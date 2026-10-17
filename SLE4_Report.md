@@ -1,10 +1,11 @@
-# SLE-4: Architecture Decision Record (ADR)
+# SLE-4: Final Viva & Architecture Decision Record (ADR)
 
 **Course:** 02AML204 – Introduction to Artificial Intelligence  
 **PRN:** 25UAM059  
 **Name:** Sanskruti Sandeep Danole  
 **Division:** A  
-**Date:** 10 October 2026
+**Date:** 10 October 2026  
+**GitHub:** https://github.com/danolesanskruti-lang/SLE-4-viva-and-ADR
 
 ## PART A: Architecture Decision Record (ADR)
 
@@ -40,23 +41,17 @@ The design uses a dedicated **Search Engine** as the main container for BFS and 
 
 ### 5. Consequences
 
-**Positive**
+### Positive
 
 - Keeps the main search responsibility in one clear architectural location.
 - Makes BFS and DFS easier to compare because they use the same Search Engine boundary.
 - Supports clear C4 Context, Container, Component and Code-level explanations.
 - Makes future changes to search logic easier to isolate.
 
-**Negative / Trade-offs**
+### Negative / Trade-offs
 
 - The Search Engine can become larger if many more search algorithms are added.
 - A shared container requires careful separation between BFS-specific and DFS-specific frontier behaviour.
-
-### 6. References
-
-- SLE-1: https://github.com/danolesanskruti-lang/ai-workflow-assistant
-- SLE-2: https://github.com/danolesanskruti-lang/IAI_SLE2
-- SLE-3: https://github.com/danolesanskruti-lang/SLE-3-C4-model
 
 ## PART B: Short Summary of My SLE Journey
 
@@ -66,4 +61,8 @@ SLE-1 established the BFS/DFS search project and AI contribution documentation. 
 
 **AI tool used:** ChatGPT.
 
-AI assistance was used for organizing and refining the ADR structure, connecting the previous SLE work, improving the clarity of the architecture rationale and consequences, and reviewing the documentation for consistency. The student provided the project context and previous work, reviewed the generated content, made the final architecture decisions and is responsible for the submitted implementation and documentation.
+**What AI helped with:** AI assistance was used to organize and refine the ADR structure, connect the SLE-4 decision with the previous SLE-1, SLE-2 and SLE-3 work, improve the clarity of the rationale and consequences, and review the documentation for consistency and presentation.
+
+**What I did myself:** I provided the project context and previous SLE work, selected the architecture decision, verified the technical content against my implementation and diagrams, reviewed and edited the AI-assisted text, and made the final decisions for the submitted implementation and documentation.
+
+**Ownership:** AI was used as a support tool for documentation and refinement. The final architecture decision, project work, verification and submission are my responsibility.
