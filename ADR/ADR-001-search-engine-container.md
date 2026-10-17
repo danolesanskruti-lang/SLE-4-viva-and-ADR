@@ -44,7 +44,13 @@ The design uses a dedicated **Search Engine** as the main container for BFS and 
 - The Search Engine can become larger if many more search algorithms are added.
 - A shared container requires careful separation between BFS-specific and DFS-specific frontier behaviour.
 
-## 6. References
+## 6. AI Contribution
+
+**AI tool used:** ChatGPT.
+
+AI assistance was used to organize and refine the ADR structure, connect the architecture decision with the previous SLE-1, SLE-2 and SLE-3 work, improve the clarity of the rationale and consequences, and review the documentation for consistency. The student provided the project context and previous work, reviewed the generated content, made the final decisions and is responsible for the submitted implementation and documentation.
+
+## 7. References
 
 - SLE-1: https://github.com/danolesanskruti-lang/ai-workflow-assistant
 - SLE-2: https://github.com/danolesanskruti-lang/IAI_SLE2
